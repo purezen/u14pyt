@@ -8,9 +8,5 @@ build:
     # Always pull the latest base image to avoid any cached images on the host
     - echo "PRE-CI"
 
-  ci:
-    # We can add sanity checks to ensure the image was built successfully here
-    - /u12/test/test_lang.sh
-
   on_success:
     - echo "success"
